@@ -18,22 +18,20 @@ nav {
     background-color: #c7ecec !important;
 }
 nav a {
-
+    background-color: #c7ecec !important;
     padding: 4px 1rem;
     margin: 0 2px;
     text-decoration: none;
 }
 
+.navbar-menu.is-active{
+    background-color: #c7ecec !important;
+    box-shadow: none;
+}
 @media only screen and (max-width: 600px) {
     nav .navbar-brand .button {
         padding: 0 0.25rem;
     }
-}
-@media only screen and (max-width: 1023px) {
-nav #navMenu {
-        position: absolute;
-        top:0;
-        right:0;}
 }
 
 /* Tabs */
@@ -105,6 +103,16 @@ body.iframe {
     background-color: #c7ecec !important;
     color: #e75d9f;
 }
+
+.calendar-btn {
+    color: #fff;
+    background-color:  #e75d9f !important;
+    border-color:  #e75d9f !important; }
+
+.calendar-btn:hover {
+   background-color: #c7ecec !important;
+   color: #e75d9f;}
+
 
 #header-img img {
    width: 100%;
