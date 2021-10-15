@@ -22,7 +22,7 @@ title: Vote No On 303
 email: letsdoourbestdenver@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Vote No On Initative 303 in the November 2021 Denver Municipal Election.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://oppose303.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -36,7 +36,7 @@ kramdown:
 defaults:
   -
     scope:
-      path: "/"
+      path: ""
       type: "pages"
     values:
       layout: "default"
