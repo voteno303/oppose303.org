@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <meta property="og:title" content="{{ page.og.title | default: page.title }}">
+    <meta property="og:description" content="{{ page.og.description | default: site.description }}">
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+    <meta property="og:image" content="{{ page.og.image | default: 'https://oppose303.org/LDOB_1200_630_web.png' }}">
+
+
+    <link rel="stylesheet" href="{{ '/assets/css/bulma.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="{{ '/assets/js/fa.js' | relative_url }}" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ 'assets/favicon/site.webmanifest' | relative_url }}">
+</head>
+
+<body class="has-navbar-fixed-top">
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+</body>
+
+</html>
