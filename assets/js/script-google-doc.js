@@ -30,10 +30,10 @@ function request(url, style) {
         html.innerHTML = xhr.responseText;
         // grab only the contents from the returned Google Doc html
         d.innerHTML = html.getElementsByTagName('div')["contents"].innerHTML;
-        if ( ! style ){
-            // removes the 1st element (should be the <style> tag)
-            d.removeChild(d.getElementsByTagName("STYLE")[0])
-        }
+        /* if ( ! style ){
+         *     // removes the 1st element (should be the <style> tag)
+         *     d.removeChild(d.getElementsByTagName("STYLE")[0])
+         * } */
         // add a class to loading div
         d.classList.add("gdoc--import");
 
