@@ -26,10 +26,16 @@ function request(url, style) {
     xhr.onload = function () {
         // create html node
         let html = document.createElement('html');
+        // Delete GDoc favicon
+        let response = xhr.responseText.replace('https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico', '/assets/favicon/favicon-32x32.png')
+        console.log(response)
         // add response to node
-        html.innerHTML = xhr.responseText;
+        html.innerHTML = response;
+
         // grab only the contents from the returned Google Doc html
         d.innerHTML = html.getElementsByTagName('div')["contents"].innerHTML;
+
+
         /* if ( ! style ){
          *     // removes the 1st element (should be the <style> tag)
          *     d.removeChild(d.getElementsByTagName("STYLE")[0])
@@ -37,11 +43,7 @@ function request(url, style) {
         // add a class to loading div
         d.classList.add("gdoc--import");
 
-        // FF displays last downloaded favicon regardless of whether it's added to the DOM.
-        // This is a hacky fix that adds another favicon DOM element to replace the Google Doc favicon
-        var link =  document.createElement('link');
-        link.type = 'image/x-icon'; link.rel = 'shortcut icon'; link.href = '/assets/favicon/favicon-32x32.png';
-        document.getElementsByTagName('head')[0].appendChild(link);
+
     };
     xhr.onerror = function () {
         // add class to body
