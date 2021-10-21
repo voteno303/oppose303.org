@@ -1,4 +1,4 @@
-html {font-family: 'Roboto', sans-serif;
+html {font-family: 'Roboto', sans-serif !important;
       background-color:  #c7ecec;}
 
 body footer {background-color:  #c7ecec !important;}
@@ -31,28 +31,6 @@ nav a {
 @media only screen and (max-width: 600px) {
     nav .navbar-brand .button {
         padding: 0 0.25rem;
-    }
-}
-
-/* Tabs */
-
-@media only screen and (max-width: 600px) {
-    .tabs {
-        font-size: 1rem !important;
-    }
-    .tabs ul {
-        flex-direction: column;
-    }
-    .tabs ul li {
-        width: 100%;
-    }
-    .tabs ul li a {
-        border:none;
-        justify-content: flex-start;
-    }
-    .tabs.is-boxed ul,
-    .tabs li.is-active a {
-        border:none;
     }
 }
 
@@ -122,3 +100,9 @@ body.iframe {
 /* Events */
 .viewerArea.l-background[style]
 {background: #c7ecec !important;}
+
+/* Endorsements */
+.endorsements {padding-top: 1rem;}
+
+.endorsements .column {padding: 0;}
+.endorsements li {font-size: 12pt; font-weight: 400; font-family: 'Roboto', sans-serif !important;}
