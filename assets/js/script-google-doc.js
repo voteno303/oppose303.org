@@ -28,13 +28,12 @@ function request(url, style) {
         let html = document.createElement('html');
         // Delete GDoc favicon
         let response = xhr.responseText.replace('https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico', '/assets/favicon/favicon-32x32.png')
-        console.log(response)
+
         // add response to node
         html.innerHTML = response;
 
         // grab only the contents from the returned Google Doc html
         d.innerHTML = html.getElementsByTagName('div')["contents"].innerHTML;
-
 
         /* if ( ! style ){
          *     // removes the 1st element (should be the <style> tag)
