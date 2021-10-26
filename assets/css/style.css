@@ -105,4 +105,4 @@ body.iframe {
 .endorsements {padding-top: 1rem;}
 
 .endorsements .column {padding: 0;}
-.endorsements li {font-size: 12pt; font-weight: 400; font-family: 'Roboto', sans-serif !important;}
+.endorsements li {font-size: 12pt; font-weight: 400; font-family: 'Roboto', sans-serif !important; padding:0.25rem 0;}
