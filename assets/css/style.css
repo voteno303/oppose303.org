@@ -1,7 +1,7 @@
 html {font-family: 'Roboto', sans-serif !important;
-      background-color:  #c7ecec;}
+      background-color:  #f1cfd6;}
 
-body footer {background-color:  #c7ecec !important;}
+body footer {background-color:  #f1cfd6 !important;}
 a {color: #e75d9f;}
 p:not(:last-of-type) {
     margin-bottom: 1em;
@@ -15,17 +15,17 @@ summary {
 nav {
     display: flex;
     padding: 2px;
-    background-color: #c7ecec !important;
+    background-color: #f1cfd6 !important;
 }
 nav a {
-    background-color: #c7ecec !important;
+    background-color: #f1cfd6 !important;
     padding: 4px 1rem;
     margin: 0 2px;
     text-decoration: none;
 }
 
 .navbar-menu.is-active{
-    background-color: #c7ecec !important;
+    background-color: #f1cfd6 !important;
     box-shadow: none;
 }
 @media only screen and (max-width: 600px) {
@@ -78,7 +78,7 @@ body.iframe {
     border-color:#58c5c6 !important; }
 
 .event-btn:hover {
-    background-color: #c7ecec !important;
+    background-color: #f1cfd6 !important;
     color: #e75d9f;
 }
 
@@ -88,7 +88,7 @@ body.iframe {
     border-color:  #e75d9f !important; }
 
 .calendar-btn:hover {
-   background-color: #c7ecec !important;
+   background-color: #f1cfd6 !important;
    color: #e75d9f;}
 
 
@@ -99,10 +99,12 @@ body.iframe {
 
 /* Events */
 .viewerArea.l-background[style]
-{background: #c7ecec !important;}
+{background: #f1cfd6 !important;}
 
 /* Endorsements */
 .endorsements {padding-top: 1rem;}
 
 .endorsements .column {padding: 0;}
 .endorsements li {font-size: 12pt; font-weight: 400; font-family: 'Roboto', sans-serif !important; padding:0.25rem 0;}
+
+.signatories{padding-left:1rem; font-weight:bold;}
